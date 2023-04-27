@@ -1,13 +1,73 @@
 .footer {
   padding: rem(20) 0;
-  background: $blackColor;
+  background: $whiteColor;
   // .footer__container
   &__container {
+  }
+
+
+  &__row {
     display: flex;
-    align-items: center;
-    @include media(510) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+
+  }
+
+  &__body {
+    flex: 0 1 50%;
+  }
+
+  &__container {
+  }
+
+  &__menu {
+  }
+
+  &__text {
+  }
+
+  &__button-row {
+  }
+
+  &__button {
+  }
+
+  &__coden {
+  }
+
+  &__card {
+    flex: 0 1 50%;
   }
 }
+.menu {
+
+  &__list {
+  }
+
+  &__list-locat {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__list-tel {
+  }
+
+  &__list-time {
+  }
+
+  &__list-messenger {
+  }
+}
+.tours {
+
+  &__button-row {
+  }
+
+  &__button {
+  }
+}
+.blue {
+}
+

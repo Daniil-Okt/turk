@@ -1,8 +1,8 @@
 // Заголовки, общие БЄМ блоки и проче...
 h1 {
    
-    @include adaptiveClamp(font-size, 64, 32);
-    @include adaptiveClamp(line-height, 78, 39);
+    @include adaptiveClamp(font-size, 52, 28);
+    @include adaptiveClamp(line-height, 63.39, 34);
     font-weight: 800;
     span {
         font-weight: 500;
