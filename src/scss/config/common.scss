@@ -1,0 +1,82 @@
+// Заголовки, общие БЄМ блоки и проче...
+h1 {
+   
+    @include adaptiveClamp(font-size, 64, 32);
+    @include adaptiveClamp(line-height, 78, 39);
+    font-weight: 800;
+    span {
+        font-weight: 500;
+    }
+}
+h2 {
+    @include adaptiveClamp(font-size, 40, 28);
+    @include adaptiveClamp(line-height, 48.76, 34.13);
+    font-weight: 600;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+h3 {
+    @include adaptiveClamp(font-size, 20, 16);
+    @include adaptiveClamp(line-height, 24.38, 34.1319);
+    font-weight: 700;
+}
+p {
+    @include adaptiveClamp(font-size, 16, 14);
+    @include adaptiveClamp(line-height, 19.5, 17.07);
+    font-weight: 500;
+}
+a {
+    @include adaptiveClamp(font-size, 16, 14);
+    @include adaptiveClamp(line-height, 19.5, 17.07);
+    font-weight: 500;
+
+    transition: all 0.3s ease  0s;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.button {
+    // background: linear-gradient(263.81deg, #f7d46c 98.17%, #FBD916 10.32% ), linear-gradient(263.81deg, #ffe659 10.32%, #F4B603 98.17%);
+    // // background: #FFC858;
+    // // opacity: 0.9;
+    // box-shadow: inset 0px 2px 15px rgba(255, 255, 255, 0.41), inset 19px 0px 25px rgba(255, 255, 255, 0.11);
+    
+    background: #FFC858;
+    box-shadow: inset 0px 2px 15px rgba(255, 255, 255, 0.41), inset 19px 0px 25px rgba(255, 255, 255, 0.11);
+
+    text-align: center;
+
+    @include adaptiveClamp(padding, 35.85, 24.78);
+    @include adaptiveClamp(max-width, 336.24, 232.42);
+    width: 100%;
+
+    transition: all 0.3s ease  0s;
+    
+    @include adaptiveClamp(font-size, 16, 11);
+    // @include adaptiveClamp(line-height, 28, 20);
+    font-weight: 700;
+    color: $whiteColor;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    border-radius: 20px / 100%;
+
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    } 
+}
+.button.white {
+    background: rgba(255, 255, 255, 0.71);
+    backdrop-filter: blur(7.5px);
+    border: 2px solid #D2A750;
+    color: #A26B00;
+    // box-shadow: inset 0px 2px 15px rgba(255, 255, 255, 0.41), inset 19px 0px 25px rgba(255, 255, 255, 0.11);
+
+    // &:hover {
+
+    // }
+}
