@@ -14,7 +14,7 @@
         left: 0;
         top: 0;
         background: url(@img/tours-fon.png) no-repeat center center / cover;
-        z-index: -1;
+        z-index: 2;
         min-width: rem(360);
         @media(max-width:600px){
             background: url(@img/tours-fon-mob.png) no-repeat center center / cover;
@@ -29,6 +29,8 @@
         }
     }
     &__container {
+        position: relative;
+        z-index: 2;
     }
 
     &__body {
@@ -74,7 +76,7 @@
         @include adaptiveClamp(font-size, 14, 10);
         text-transform: none;
         font-weight: 600;
-
+        top: 0;
         padding: rem(31.17) rem(50) rem(31.17) rem(22.91);
 
         background: linear-gradient(258.15deg, rgba(37, 211, 102, 0.2) 18.65%, rgba(255, 255, 255, 0.2) 22.77%, rgba(37, 211, 102, 0.2) 26.21%), #25D366;
@@ -86,8 +88,11 @@
 
         &:hover {
             color: #4F4F4F;
+            opacity: 1;
+            top: rem(-2);
         }
         &:active {
+            top: 0;
             background: linear-gradient(258.15deg, rgba(37, 211, 102, 0.2) 18.65%, rgba(255, 255, 255, 0.2) 22.77%, rgba(37, 211, 102, 0.2) 26.21%), #4BF58B;
         }
         @media(max-width:890px){

@@ -8,7 +8,6 @@
     &__row {
         display: flex;
         position: relative;
-        @include adaptiveClamp(padding-top, 57.32, 27.32);
     
         @media(max-width:720px){
         padding-bottom: rem(140.28);
@@ -38,6 +37,8 @@
     }
 
     &__left-wrap {
+        @include adaptiveClamp(padding-top, 57.32, 27.32);
+
         flex: 0 1 75%;
         @media(max-width:720px){
             flex: 0 1 100%;
@@ -55,10 +56,11 @@
     }
 
     &__form {
+       
     }
 
     &__img {
-        max-width: rem(893.78);
+        max-width: rem(900);
         img {
             width: 100%;
         }
@@ -68,13 +70,15 @@
     }
 
     &__right-wrap {
+
         flex: 0 1 25%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: rem(0) rem(20) rem(30.55);
+        @include adaptiveClamp(padding-top, 57.32, 27.32);
 
-        margin-left: rem(40);
+        
 
         min-width: rem(260);
 
@@ -138,8 +142,10 @@
         }
     }
 }
-.form-kwis {
-
+.form-kwis.form-kwis-item1 {
+    background: none;
+    padding: 0;
+    margin: 0;
     &__body {
     }
 
@@ -150,8 +156,9 @@
     display: flex;
     flex-wrap: wrap;
     @include adaptiveClamp(row-gap, 22, 12);
+
     margin: 0 rem(-30);
-    @media(max-width:920px){
+    @media(max-width:1040px){
         margin: 0 rem(-10);
     }
     max-width: rem(720);
@@ -164,7 +171,7 @@
     &__item {
         flex: 0 1 50%;
         padding: 0 rem(30);
-        @media(max-width:920px){
+        @media(max-width:1040px){
             padding: 0 rem(10);
         }
         @media(max-width:720px){
@@ -283,9 +290,9 @@
         // display: none;
         position: absolute;
         top: 100%;
-        left: rem(-40);
+        left: rem(-60);
         margin-top: rem(21.81);
-        width: 115%;
+        width: 120%;
         // height: 100%;
         padding: rem(19) rem(21.25) rem(46.55);
 
@@ -331,6 +338,7 @@
     }
     &__row-form {
         // min-width: 100%;
+        
         @media(max-width:720px){
             &::after {
                 position: absolute;
@@ -358,9 +366,9 @@
             position: absolute;
             content: '';
             margin-top: rem(45.21);
-            width: 115%;
+            width: 100%;
             height: 100%;
-            margin: 0 rem(-20);
+            // margin: 0 rem(-20);
             bottom: 0;
             left: 0;
             background: url(@img/kwis-fon.png) no-repeat center bottom / cover;

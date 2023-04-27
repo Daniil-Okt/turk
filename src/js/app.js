@@ -107,4 +107,12 @@ const swiper = new Swiper('.kwis__swiper', {
     el: '.swiper-pagination',
     type: 'progressbar',
   },
+  autoHeight: true,
 });
+
+let openKwisButton = document.querySelector('.button-open-kwis')
+let wrapper = document.querySelector('wrapper')
+
+openKwisButton.addEventListener ('click', () => {
+    wrapper.classList.add('openKwis')
+})
