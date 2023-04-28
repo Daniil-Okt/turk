@@ -63,7 +63,7 @@ menuInit()
 * На кнопку для закрытия окна добавь класс button-close
 */
 /* Раскомментировать для использования */
-// togglePopupWindows()
+togglePopupWindows()
 // =======================================================================================================
 
 /*Динамический адаптив ===================================================================================
@@ -110,9 +110,9 @@ const swiper = new Swiper('.kwis__swiper', {
   autoHeight: true,
 });
 
-let openKwisButton = document.querySelector('.button-open-kwis')
-let wrapper = document.querySelector('wrapper')
+// let openKwisButton = document.querySelector('.button-open-kwis')
+// let wrapper = document.querySelector('.wrapper')
 
-openKwisButton.addEventListener ('click', () => {
-    wrapper.classList.add('openKwis')
-})
+// openKwisButton.addEventListener ('click', () => {
+//     wrapper.classList.add('openKwis')
+// })
